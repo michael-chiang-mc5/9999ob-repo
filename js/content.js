@@ -47,6 +47,12 @@ $(document).ready(function() {
       });
     }
 
+    else if ( id == "contact_info" ) {
+      $.get("contact_info.html", function( my_var ) {
+          $( "#content" ).html(my_var);
+      });
+    }
+
     else if ( id == "helpful_links" ) {
       $.get("home_tab.html", function( my_var ) {
           $( "#content" ).html(my_var);
